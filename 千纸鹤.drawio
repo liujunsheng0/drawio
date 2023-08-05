@@ -1,13 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2023-08-05T04:04:54.117Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="q0vgOCliLqGUjqAeqJBf" version="21.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-05T04:06:39.607Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="YGUv6EdovByp_0q5FxvR" version="21.6.6" type="github">
   <diagram name="第 1 页" id="5y6Xqfj9AS7hxCkcyC5c">
     <mxGraphModel dx="2963" dy="2776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="maS5teIkq-afN_RNYWQt-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="maS5teIkq-afN_RNYWQt-6" target="eDOVY2akEdQwVWCUJnqj-24">
+        <mxCell id="maS5teIkq-afN_RNYWQt-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="maS5teIkq-afN_RNYWQt-6" target="eDOVY2akEdQwVWCUJnqj-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="maS5teIkq-afN_RNYWQt-6" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="maS5teIkq-afN_RNYWQt-6" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="240" y="130" width="180" height="540" as="geometry" />
         </mxCell>
         <mxCell id="eDOVY2akEdQwVWCUJnqj-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="7tZ6_LmN9otQWTiCPjQR-2" target="7tZ6_LmN9otQWTiCPjQR-3" edge="1">
@@ -152,7 +152,7 @@
         <mxCell id="eDOVY2akEdQwVWCUJnqj-19" value="下发奖励" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1410" y="270" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="maS5teIkq-afN_RNYWQt-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.013;entryY=0.482;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="eDOVY2akEdQwVWCUJnqj-23" target="maS5teIkq-afN_RNYWQt-6">
+        <mxCell id="maS5teIkq-afN_RNYWQt-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.013;entryY=0.482;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="eDOVY2akEdQwVWCUJnqj-23" target="maS5teIkq-afN_RNYWQt-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eDOVY2akEdQwVWCUJnqj-23" value="kafka任务进度" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -167,20 +167,23 @@
         <mxCell id="eDOVY2akEdQwVWCUJnqj-24" value="任务进度+1" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="480" y="370" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="maS5teIkq-afN_RNYWQt-1" value="送礼事件" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="maS5teIkq-afN_RNYWQt-1" value="送礼事件" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="163" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="maS5teIkq-afN_RNYWQt-2" value="收礼事件" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="maS5teIkq-afN_RNYWQt-2" value="收礼事件" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="260" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="maS5teIkq-afN_RNYWQt-3" value="观看时长事件" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="maS5teIkq-afN_RNYWQt-3" value="观看时长事件" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="370" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="maS5teIkq-afN_RNYWQt-4" value="玩法" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="maS5teIkq-afN_RNYWQt-4" value="玩法" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="500" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="maS5teIkq-afN_RNYWQt-5" value="...." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="maS5teIkq-afN_RNYWQt-5" value="...." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rMzZO2Xu6Sd9lxV6x5ht-1" value="方案1：生成快照读时候抽奖、缺点：未读记录太多时慢、生成快照&lt;br&gt;方案2:如图" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-357" width="380" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
