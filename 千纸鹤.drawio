@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-08-05T04:06:39.607Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="YGUv6EdovByp_0q5FxvR" version="21.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-08-07T09:48:07.817Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" etag="PvXhTq_09ZylxH1BOwg0" version="21.6.6" type="github">
   <diagram name="第 1 页" id="5y6Xqfj9AS7hxCkcyC5c">
-    <mxGraphModel dx="2963" dy="2776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1536" dy="2002" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -99,7 +99,7 @@
         <mxCell id="eDOVY2akEdQwVWCUJnqj-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="7tZ6_LmN9otQWTiCPjQR-35" target="eDOVY2akEdQwVWCUJnqj-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="7tZ6_LmN9otQWTiCPjQR-35" value="抽奖" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="7tZ6_LmN9otQWTiCPjQR-35" value="抽奖（幂等、双写机制、upsert）" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1230" y="420" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eDOVY2akEdQwVWCUJnqj-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="7tZ6_LmN9otQWTiCPjQR-36" target="eDOVY2akEdQwVWCUJnqj-1" edge="1">
@@ -131,17 +131,17 @@
         <mxCell id="eDOVY2akEdQwVWCUJnqj-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="eDOVY2akEdQwVWCUJnqj-8" target="eDOVY2akEdQwVWCUJnqj-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eDOVY2akEdQwVWCUJnqj-8" value="抽奖记录" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="eDOVY2akEdQwVWCUJnqj-8" value="抽奖记录（对账）" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1410" y="420" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eDOVY2akEdQwVWCUJnqj-11" value="刷新入口" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1730" y="420" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eDOVY2akEdQwVWCUJnqj-16" value="采用此模式，抽奖耗时长，防止任务中断&lt;br&gt;保护系统，提升抽奖速度" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="840" y="223" width="240" height="40" as="geometry" />
+        <mxCell id="eDOVY2akEdQwVWCUJnqj-16" value="采用此模式，抽奖耗时长，防止任务中断&lt;br&gt;保护系统，提升抽奖速度&lt;br&gt;提交ack-1，全分区同步" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="839" y="213" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eDOVY2akEdQwVWCUJnqj-17" value="用户体验，直接抽" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="960" y="725" width="120" height="30" as="geometry" />
+        <mxCell id="eDOVY2akEdQwVWCUJnqj-17" value="用户体验，直接抽&lt;br&gt;都走kafka&amp;nbsp; 问题：延迟时体验不好&lt;br&gt;判断抽奖队列长度 走哪些" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="920" y="710" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eDOVY2akEdQwVWCUJnqj-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="eDOVY2akEdQwVWCUJnqj-18" target="eDOVY2akEdQwVWCUJnqj-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -182,8 +182,11 @@
         <mxCell id="maS5teIkq-afN_RNYWQt-5" value="...." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="600" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="rMzZO2Xu6Sd9lxV6x5ht-1" value="方案1：生成快照读时候抽奖、缺点：未读记录太多时慢、生成快照&lt;br&gt;方案2:如图" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="rMzZO2Xu6Sd9lxV6x5ht-1" value="方案1：生成快照读时候抽奖、缺点：未读记录太多时慢、生成快照&lt;br&gt;方案2:如图" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="10" y="-357" width="380" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tANXUXv48WDWBPQAN_tU-1" value="先预写db，任务补偿处理失败的，直抽" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="420" width="230" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
